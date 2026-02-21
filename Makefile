@@ -24,3 +24,9 @@ stop:
 .PHONY: clean
 clean:
 	docker compose down -v
+
+# Build go app
+.PHONY: build
+build:
+	mkdir bin
+	go build -o bin/myapp
