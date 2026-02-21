@@ -28,5 +28,5 @@ clean:
 # Build go app
 .PHONY: build
 build:
-	mkdir bin
-	go build -o bin/myapp
+	mkdir -p build
+	go build -o build/nosql-app ./cmd/app
