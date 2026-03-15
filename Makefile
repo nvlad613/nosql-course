@@ -24,3 +24,9 @@ stop:
 .PHONY: clean
 clean:
 	docker compose down -v
+
+# Build go app
+.PHONY: build
+build:
+	mkdir -p build
+	go build -o build/nosql-app ./cmd/app
